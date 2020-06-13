@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="icon" type="image/svg" href="../Data/FavIcon.svg">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <title>Googol</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Product+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+    .mdc-select__anchor,
+    .mdc-select__menu {
+        width: 400px;
+    }
+    .unselectable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+         user-select: none;
+    }
+    .heebo {
+       font-family: 'Heebo', sans-serif;
+    }
+    .noto-sans {
+       font-family: 'Noto Sans', sans-serif;
+    }
+    .roboto-mono {
+       font-family: 'Roboto Mono', monospace;
+    }
+    .roboto {
+       font-family: 'Roboto', sans-serif;
+    }
+    .product-sans {
+       font-family: 'Product Sans', sans-serif;    
+    }
+    .raleway {
+       font-family: 'Raleway', sans-serif;
+    }
+    .center {
+      margin: auto;
+      text-align: center;
+      width: 50%;
+    }
+    </style>
+<script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+</head>
+<body>
+  <aside style="top: 0px;" class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list unselectable">
+        <a class="mdc-list-item mdc-list-item" href="#" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">search</i>
+          <span class="mdc-list-item__text unselectable">Googol</span>
+        </a>
+        <a class="mdc-list-item" href="About/about.html" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>
+          <span class="mdc-list-item__text  unselectable">About</span>
+        </a>
+        <a class="mdc-list-item" href="mailto:tigrankhachatryan2008@gmail.com" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">feedback</i>
+          <span class="mdc-list-item__text  unselectable">Feedback</span>
+        </a>
+        <a class="mdc-list-item mdc-list-item--activated" href="#" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">report</i>
+          <span class="mdc-list-item__text unselectable">Error 404</span>
+        </a>
+        <h6 class="mdc-list-group__subheader">GOOGLE ACCOUNT</h6>
+        <a class="mdc-list-item" href="https://myaccount.google.com" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">account_circle</i>
+          <span class="mdc-list-item__text unselectable">Account Manager</span>
+        </a>
+        <a class="mdc-list-item" href="https://passwords.google.com" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">vpn_key</i>
+          <span class="mdc-list-item__text unselectable">Your passwords</span>
+        </a>
+        <a class="mdc-list-item" href="https://aboutme.google.com" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">person</i>
+          <span class="mdc-list-item__text unselectable">Your profile</span>
+        </a>
+        <a class="mdc-list-item" href="https://aboutme.google.com" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">autorenew</i>
+          <span class="mdc-list-item__text unselectable">Your devices</span>
+        </a>
+        <a class="mdc-list-item" href="https://google.com/takeout" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">arrow_forward</i>
+          <span class="mdc-list-item__text unselectable">Takeout</span>
+        </a>
+        <a class="mdc-list-item" href="https://google.com/android/devicemanager" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">phone_android</i>
+          <span class="mdc-list-item__text unselectable">Where's my Android?</span>
+        </a>
+        <a class="mdc-list-item" href="https://accounts.google.com/SignUp" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">person_add</i>
+          <span class="mdc-list-item__text unselectable">Sign Up</span>
+        </a>
+        <h6 class="mdc-list-group__subheader">GOOGLE APPS</h6>
+        <a class="mdc-list-item" href="https://google.com" tabindex="0" aria-current="page">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">search</i>
+          <span class="mdc-list-item__text unselectable">Search</span>
+        </a>
+        <a class="mdc-list-item" href="https://play.google.com/store/apps" tabindex="0">
+          <i class="material-icons-outlined mdc-list-item__graphic" aria-hidden="true">shop</i>
+          <span class="mdc-list-item__text unselectable">Play Store</span>
+        </a>
+        <a class="mdc-list-item" href="https://gmail.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>
+          <span class="mdc-list-item__text unselectable">Gmail</span>
+        </a>
+        <a class="mdc-list-item" href="https://contacts.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">group</i>
+          <span class="mdc-list-item__text unselectable">Contacts</span>
+        </a>
+        <a class="mdc-list-item" href="https://drive.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">filter_drama</i>
+          <span class="mdc-list-item__text unselectable">Drive</span>
+        </a>
+        <a class="mdc-list-item" href="https://calendar.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">event_note</i>
+          <span class="mdc-list-item__text unselectable">Calendar</span>
+        </a>
+        <a class="mdc-list-item" href="https://translate.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">g_translate</i>
+          <span class="mdc-list-item__text unselectable">Translate</span>
+        </a>
+        <a class="mdc-list-item" href="https://duo.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">duo</i>
+          <span class="mdc-list-item__text unselectable">Duo</span>
+        </a>
+        <a class="mdc-list-item" href="https://meet.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">videocam</i>
+          <span class="mdc-list-item__text unselectable">Meet</span>
+        </a>
+        <a class="mdc-list-item" href="https://docs.google.com/document/u/0/" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">description</i>
+          <span class="mdc-list-item__text unselectable">Documents</span>
+        </a>
+        <a class="mdc-list-item" href="https://www.blogger.com/" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">rss_feed</i>
+          <span class="mdc-list-item__text unselectable">Blogger</span>
+        </a>
+        <a class="mdc-list-item" href="https://hangouts.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">message</i>
+          <span class="mdc-list-item__text unselectable">Google Talk</span>
+        </a>
+        <a class="mdc-list-item" href="https://keep.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">create</i>
+          <span class="mdc-list-item__text unselectable">Keep</span>
+        </a>
+        <a class="mdc-list-item" href="https://classroom.google.com/" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">school</i>
+          <span class="mdc-list-item__text unselectable">Classroom</span>
+        </a>
+        <a class="mdc-list-item" href="https://earth.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">public</i>
+          <span class="mdc-list-item__text unselectable">Earth</span>
+        </a>
+        <a class="mdc-list-item" href="https://photos.google.com" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">collections</i>
+          <span class="mdc-list-item__text unselectable">Photos</span>
+        </a>
+        <hr class="mdc-list-divider">
+      <h6 class="mdc-list-group__subheader">ACCESSIBILITY</h6>
+        <a class="mdc-list-item" href="virtualkeyboard.html" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">keyboard</i>
+          <span class="mdc-list-item__text unselectable">Virtual Keyboard</span>
+          </a>
+          <a class="mdc-list-item" href="#" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">zoom_in</i>
+          <span class="mdc-list-item__text unselectable">Larger version</span>
+        </a>
+          <a class="mdc-list-item" href="thegrooglses/google.html" tabindex="0">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">history</i>
+          <span class="mdc-list-item__text unselectable">Old version (TheGrooglses)</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-scrim"></div>
+  
+  <div class="mdc-drawer-app-content">
+    
+    <header style="top: 0px; left: 0px; background-color: #ab000d;" class="mdc-top-app-bar mdc-top-app-bar--fixed">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" id="menubutton">menu</button>
+          <span class="mdc-top-app-bar__title">Error!</span>
+        </section>
+      </div>
+    </header>
+    
+    <main class="mdc-top-app-bar--fixed-adjust unselectable center">
+        <br>
+        <br>
+        <span class="material-icons" style="font-size: 72px; color: #424242; margin-bottom: 0px; padding-bottom: 0px;">report</span>
+        <p style="padding-left: 10px; font-size: 30px; padding-bottom: 0px; margin-bottom: 0px;" class="heebo">Oh no! You got an error, here is some information which might be useful to you.</p>
+        <p style="padding-left: 10px; font-size: 20px;" class="heebo">The error you got is <a href="https://en.wikipedia.org/wiki/HTTP_404">404.</a> To fix the error, you should open the menu and press Googol.</p>
+    </main>
+</div>
+<script>
+const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'));
+topAppBar.listen('MDCTopAppBar:nav', () => {
+  drawer.open = !drawer.open;
+});
+
+const select = mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
+select.listen('MDCSelect:change', () => {
+  console.log(select.selectedIndex, select.value);
+});
+
+$(function(){
+  // Bind the swipeleftHandler callback function to the swipe event on div.box
+  $( "div.box" ).on( "swipeleft", swipeleftHandler );
+ 
+  // Callback function references the event target and adds the 'swipeleft' class to it
+  function swipeleftHandler( event ){
+    $('#gift-close').trigger('click');
+  }
+});
+</script>
+</body>
+</html>
