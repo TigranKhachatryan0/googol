@@ -5,54 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    <link rel="icon" type="image/svg" href="../Data/FavIcon.svg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="icon" type="image/svg" href="../Data/FavIcon.svg">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <title>Googol</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Product+Sans&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
-    sup {
-        color: #858585;
-        padding: 0px;
-    }
-    #spacebarkey {
-        background-color: #aeaeae;
-        -webkit-transition: background 0.5s linear;
-        -moz-transition: background 0.5s linear;
-        -ms-transition: background 0.5s linear;
-        -o-transition: background 0.5s linear;
-        transition: background 0.5s linear;
-    }
-    
-    #spacebarkey.highlighted {
-        background-color: white;
-    }
-    
-    .keybutton { 
-        -moz-transition: all .2s ease-in;
-        -o-transition: all .2s ease-in;
-        -webkit-transition: all .2s ease-in;
-        transition: all .2s ease-in;
-    }
-
-    .keybutton:hover { 
-        color: #aeaeae;
-    }
-    
-    #virtualkeyboard {
-        text-align:justify;
-        text-justify: inter-word;
-        text-align-last: justify;
-        /* for IE9 */
-        -ms-text-align-last: justify;
-    }
     .mdc-select__anchor,
     .mdc-select__menu {
         width: 400px;
@@ -200,7 +164,7 @@
         </a>
         <hr class="mdc-list-divider">
       <h6 class="mdc-list-group__subheader">ACCESSIBILITY</h6>
-        <a class="mdc-list-item mdc-list-item--activated" href="lightmode.html" tabindex="0">
+        <a class="mdc-list-item" href="virtualkeyboard.html" tabindex="0">
           <i class="material-icons mdc-list-item__graphic" aria-hidden="true">keyboard</i>
           <span class="mdc-list-item__text unselectable">Virtual Keyboard</span>
           </a>
@@ -262,7 +226,7 @@
     <input type="text" disabled readonly id="demo-selected-text" class="mdc-select__selected-text" value="Everything">
     <i class="mdc-select__dropdown-icon"></i>
     <span id="demo-label" class="mdc-floating-label mdc-floating-label--float-above">Filter...</span>
-    <span style="display: inline; position: fixed;" class="mdc-line-ripple"></span>
+    <span class="mdc-line-ripple"></span>
   </div>
 
   <div class="unselectable mdc-select__menu mdc-menu mdc-menu-surface" role="listbox">
@@ -293,22 +257,6 @@
 </div>
 
 </div>        
-
-
-<div id="virtualkeyboard" class="roboto unselectable" style="box-shadow: 0 -5px 10px -10px #333; font-size: 20px; display: block; position: absolute; left: 0; right: 0; bottom: 0; background-color: #e0e0e0;">
-
-<div style="width: 90%; font-size: 30px;" class="center">
-
-<div style="display: inline; font-size: 25px;"><p><p class="keybutton" style="display: inline;" onclick="addtofield('1')">1 </p><p class="keybutton" style="display: inline;" onclick="addtofield('2')"> 2 </p> <p class="keybutton" style="display: inline;" onclick="addtofield('3')"> 3 </p> <p style="display: inline;" class="keybutton" onclick="addtofield('4')"> 4 </p> <p class="keybutton" style="display: inline;" onclick="addtofield('5')">  5 </p> <p class="keybutton" style="display: inline;" onclick="addtofield('6')">  6 </p> <p class="keybutton" style="display: inline;" onclick="addtofield('7')">  7 </p> <p class="keybutton" style="display: inline;" onclick="addtofield('8')">  8 </p> <p class="keybutton" style="display: inline;" onclick="addtofield('9')">  9 </p> <p class="keybutton" style="display: inline;" onclick="addtofield('0')">  0</p></p></div>
-
-<p class="fulljustify"><p class="keybutton" style="display: inline;" onclick="addtofield('q')">q<sup>{</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('w')"> w<sup>}</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('e')"> e<sup>~</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('r')"> r<sup>|</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('t')"> t<sup>\</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('y')"> y<sup>=</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('u')"> u<sup>÷</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('i')"> i<sup>×</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('o')"> o<sup>[</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('p')"> p<sup>]</sup></p></p>
-<p class="fulljustify"><p class="keybutton" style="display: inline;" onclick="addtofield('a')"> a<sup>@</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('s')"> s<sup>#</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('d')"> d<sup>$</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('f')"> f<sup>%</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('g')"> g<sup>&</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('h')"> h<sup>-</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('j')"> j<sup>+</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('k')"> k<sup>(</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('l')"> l<sup>)</sup></p></p>
-<p class="fulljustify""><p class="material-icons keybutton" style="font-size: 30px; display: inline;">arrow_upward</span><p class="keybutton" style="display: inline;" onclick="addtofield('z')"> z<sup>*</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('x')"> x<sup>"</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('c')"> c<sup>'</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('v')"> v<sup>:</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('b')"> b<sup>;</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('n')"> n<sup>!</sup></p><p class="keybutton" style="display: inline;" onclick="addtofield('m')"> m<sup>?</sup></p> <span style="font-size: 30px;" id="backspacebutton" class="material-icons">backspace</span></p>
-<p style="text-align: center;"><p class="keybutton" style="display: inline;" onclick="alert('As of now, special characters is not a feature')">?123</p><p class="keybutton" style="display: inline;" onclick="addtofield('/')"> /</p> <span class="material-icons" style="font-style: bold;" onclick="alert('You cannot change the language')">language</span>‏‏‎ ‎<span onclick="keypressspace()" style="border-radius: 10px; display: inline; font-size: 20px; padding: 5px;" id="spacebarkey" class="center">‎‏‏‎ ‎English‏‏‎  ‏‏‎</span><p class="keybutton" style="display: inline;" onclick="addtofield('.')"> ‎‎‏‏‎.</p> <span id="returnkey" onclick="keypressreturn()" style="border-radius: 100px; padding: 5px; background-color: blue; color: white; font-size: 40px;" class="material-icons">search</span>‎‎</p>
-</div>
-</div>
-
-
 <script>
 const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'));
@@ -320,96 +268,6 @@ const select = mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select
 select.listen('MDCSelect:change', () => {
   console.log(select.selectedIndex, select.value);
 });
-
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
-}
-
-var fieldparam = getUrlVars()["field"];
-if (fieldparam /= "undefined") {
-document.getElementById("textfld").value = fieldparam;
-} else {
-document.getElementById("textfld").value = "";
-}
-//var timeoutId = 0;
-
-//$('#backspacebutton').on('mousedown', function() {
-//    timeoutId = setTimeout(keypressbackspace(), 100);
-//}).on('mouseup mouseleave', function() {
-//    clearTimeout(timeoutId);
-//});
-
-$('#backspacebutton').mousedown(function () {
-        keypressbackspace()
-        timeout = setInterval(function () {
-            keypressbackspace()
-        }, 300);
-
-        return false;
-    });
-    $('#backspacebutton').mouseup(function () {
-        clearInterval(timeout);
-        return false;
-    });
-    $('#backspacebutton').mouseout(function () {
-        clearInterval(timeout);
-        return false;
-    });
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-    
-function addtofield(arg) {
-  var audioElement = document.createElement('audio');
-  audioElement.setAttribute('src', '../Data/StandardKeypress.ogg');
-  audioElement.play();
-  var currentVal = $('#textfld').val();
-  var newVal = currentVal + arg;
-  $('#textfld').val(newVal);
-}
-
-function sleep (time) {
-  return new Promise((resolve) => setTimeout(resolve, time));
-}
-
-function keypressspace () {
-  var audioElement = document.createElement('audio');
-  audioElement.setAttribute('src', '../Data/SpacebarKeypress.ogg');
-  audioElement.play();
-  document.getElementById("spacebarkey").style.background = "white";
-  sleep(200).then(() => {
-    document.getElementById("spacebarkey").style.background = "#aeaeae";
-  });
-  var currentVal = $('#textfld').val();
-  var newVal = currentVal + " ";
-  $('#textfld').val(newVal);
-  
-  }
-
-function keypressbackspace () {
-  var audioElement = document.createElement('audio');
-  audioElement.setAttribute('src', '../Data/BackspaceKeypress.ogg');
-  audioElement.play();
-  document.getElementById("backspacebutton").style.color = "#aeaeae";
-  sleep(200).then(() => {
-    document.getElementById("backspacebutton").style.color = "black";
-  });
-  backspace()
-}
-
-function keypressreturn () {
-var audioElement = document.createElement('audio');
-audioElement.setAttribute('src', '../Data/ReturnKeypress.ogg');
-audioElement.play();
-document.getElementById("returnkey").style.background = "darkblue";
-console.log("Searching '" + document.getElementById("textfld").value + "'");
-window.location.href = "https://google.com/search?q=" + document.getElementById("textfld").value;
-}
 
 var textfieldLength=document.getElementById("textfld").value;
 
@@ -496,6 +354,10 @@ function backspace () {
 console.log("Removing the last character fro mthe text field");
 var $myInput = $('#textfld');
 $myInput.val($myInput.val().slice(0, -1));
+}
+
+function select1 () {
+alert("image selected");
 }
 
 $('#textfld').keypress(function(event){
